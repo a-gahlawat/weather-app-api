@@ -26,7 +26,7 @@ body {
     height: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background: #FAFAFA;
+    background: #87ecdb;
     font-family: weathericons;
     display: flex;
     align-items: center;
@@ -83,8 +83,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
-    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
     font-weight: 800;
   }
 }
@@ -104,4 +104,12 @@ p{
   font-size: large;
   font: 2em sans-serif;
   font-weight: bold;
+}
+
+.headi{
+  font-size: large;
+  font-weight: bold;
+  font: 2.5em Poiret One;
+  position: absolute;
+  left: 30%;
 }
