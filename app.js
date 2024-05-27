@@ -21,9 +21,9 @@ app.post("/",function(req,res){
     
         response.on("data",function(data){
             const weatherData = JSON.parse(data);
-            const temp = weatherData.main.temp;
-            const weatherDes = weatherData.weather[0].description;
-            const icon = weatherData.weather[0].icon;
+            const temp = weatherData?.main?.temp;
+            const weatherDes = weatherData?.weather[0]?.description;
+            const icon = weatherData?.weather[0]?.icon;
             const imgURL = "https://openweathermap.org/img/wn/"+icon+"@2x.png";
             res.render("weather",{weatherDes:weatherDes, query: query ,temp:temp,imgURL:imgURL});
         })
